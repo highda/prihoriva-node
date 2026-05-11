@@ -82,7 +82,7 @@ function showTop(history, n = 10) {
   console.log(`\n${D}── Nejlepší pokusy ─────────────────────────────${R}`);
   top.forEach((h, i) => {
     const c = color(h.sim);
-    console.log(`  ${D}${i + 1}.${R} ${B}${h.word.padEnd(20)}${R} ${c}${h.sim.toFixed(1).padStart(5)} % ${bar(h.sim)} ${label(h.sim)}${R}`);
+    console.log(`  ${D}${String(i + 1).padStart(3)}.${R} ${B}${h.word.padEnd(20)}${R} ${c}${h.sim.toFixed(1).padStart(5)} % ${bar(h.sim)} ${label(h.sim)}${R}`);
   });
   console.log();
 }
